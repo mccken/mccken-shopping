@@ -25,7 +25,7 @@ public class User implements Serializable {
 	/**
 	 * 用户名必须唯一 的属性名
 	 */
-	public static final String PROP_USERUSERNAME="userUsername";
+	public static final String PROP_USERName="userName";
 	
 	/**
 	 * 用户密码：md5加密 的属性名
@@ -47,7 +47,7 @@ public class User implements Serializable {
 	/**
 	 * 用户名必须唯一
 	 */
-	private java.lang.String userUsername;
+	private java.lang.String userName;
 	
 	/**
 	 * 用户密码：md5加密
@@ -83,20 +83,20 @@ public class User implements Serializable {
 	
 	/**
 	 * 获取 用户名必须唯一 的属性值
-	 * @return userUsername :  用户名必须唯一 
+	 * @return userName :  用户名必须唯一 
 	 * @author 747807013@qq.com
 	 */
-	public java.lang.String getUserUsername(){
-		return this.userUsername;
+	public java.lang.String getuserName(){
+		return this.userName;
 	}
 
 	/**
 	 * 设置 用户名必须唯一 的属性值
-	 * @param userUsername :  用户名必须唯一 
+	 * @param userName :  用户名必须唯一 
 	 * @author 747807013@qq.com
 	 */
-	public void setUserUsername(java.lang.String userUsername){
-		this.userUsername	= userUsername;
+	public void setuserName(java.lang.String userName){
+		this.userName	= userName;
 	}
 	
 	/**
@@ -143,7 +143,7 @@ public class User implements Serializable {
 	 */
 	public String toString(){
 		
-		return "{ _name=User" + ",userId=" + userId +",userUsername=" + userUsername +",userPassword=" + userPassword +",userEmail=" + userEmail + "}";
+		return "{ _name=User" + ",userId=" + userId +",userName=" + userName +",userPassword=" + userPassword +",userEmail=" + userEmail + "}";
 	}
 	
 	/**
@@ -151,6 +151,6 @@ public class User implements Serializable {
 	 * @author 747807013@qq.com
 	 */
 	public String toJson(){
-		return "{ _name:'User'" + ",userId:'" + userId + "'" +",userUsername:'" + userUsername + "'" +",userPassword:'" + userPassword + "'" +",userEmail:'" + userEmail + "'" +  "}";
+		return "{ _name:'User'" + ",userId:'" + userId + "'" +",userName:'" + userName + "'" +",userPassword:'" + userPassword + "'" +",userEmail:'" + userEmail + "'" +  "}";
 	}
 }
